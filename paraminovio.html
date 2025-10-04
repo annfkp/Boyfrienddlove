@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>paramibebeosi</title>
+ 
+   
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contenedor {
+      max-width: 900px;
+      background: #ffffffcc;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      backdrop-filter: blur(5px);
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: #ff2e63;
+      font-size: 42px;
+      margin-bottom: 5px;
+    }
+
+    h1 span {
+      display: block;
+      font-size: 38px;
+    }
+
+    p {
+      color: #333;
+      font-size: 18px;
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+
+    .corazon {
+      font-size: 70px;
+      color: #ff2e63;
+      margin: 20px 0;
+      animation: latir 1s infinite;
+    }
+
+    @keyframes latir {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .imagenes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .imagenes img {
+      width: 240px;
+      height: auto;
+      border-radius: 15px;
+      margin: 10px;
+      border: 3px solid #ff99b9;
+      transition: transform 0.3s;
+    }
+
+    .imagenes img:hover {
+      transform: scale(1.05);
+    }
+
+    audio {
+      margin-top: 20px;
+      border-radius: 15px;
+      outline: none;
+    }
+
+    .boton {
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: linear-gradient(45deg, #ff2e63, #ff6f91);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .boton:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .firma {
+      margin-top: 25px;
+      font-style: italic;
+      color: #444;
+      font-size: 18px;
+    }
+
+    .heart {
+      position: absolute;
+      color: #ff2e63;
+      font-size: 20px;
+      animation: float 2s linear forwards;
+    }
+
+    @keyframes float {
+      from { opacity: 1; transform: translateY(0); }
+      to { opacity: 0; transform: translateY(-100px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>
+      <span>Happy Boyfriend's Day💘</span>
+    </h1>
+
+    <div class="corazon">🖇️💗</div>
+
+    <p>
+    Un dia nos conocimos y nos volvimos lo que hoy somos, Denn, cariño un dia como el 08 de agosto del 2024, 
+    fue el dia que comenzo <b>nuestra historia de amor</b>
+    </p>
+
+    <p>
+      En este día quiero celebrar no solo que eres mi novio, si no la persona que me ha hecho muy feliz en todo este tiempo, por tenerme paciencia siempre, te lo agradezco infinitamente, te amo cielo, y te amare por el resto de mi vida si asi me lo permites, solo no me dejes de <b>amar</b>, porque tu eres el sentido de mi  vida, eres ese alguien que ilumina mis dias tristes en dias buenos, y auque todo el tiempo casi peleamos, no te eh dejado de amar corazon, te amo mi cielo, y feliz dia del novio, <b>cuchurrumin.</b>💕
+    </p>
+
+    <p>
+      Te amo o esa palabra se queda corta ante ti y con mis sentimientos, nos aprendimos amar y te agradezco seguir <b>conmigo</b>, te agradezco todo, tu amor y todo lo que eres para mi, somos los dos, solos en el <b>mundo</b>, enamorados sin pensar en el mañana, neta te amo mi morenito lindo, y siempre lo hare, no hay nadie mas que ame que solo a ti, eres mi motivo en seguir aqui, gracias por siempre estar para mi, y aunque peleemos, nunca dejes de pensar que no <b>teamo</b>, te amo como jungkook ama a <b>tae</b>, como soobin ama a <b>kai</b>, o como un gato no puede <b>vivir</b> sin su enamoradx, t amo en cada una de las vidas que existan de aqui en adelante y espero coincidir contigo en otro universo o quizas en la muerte tambien.
+    </p>
+    <p>
+      Nunca <b>ame</b> tanto en mi vida como lo eh echo contigo, y eso es lo que me impresiona, eres la primer
+      persona con la cual quiero todo y al a cual ame con intensidad desde el dia <b>1</b>, Eres y seguiras siendo el amor de mi vida de aqui hasta que me deje de latir aceleradamente el corazon por ti, o hasta que deje de respirar, te amo mi amor, y espero tu tambien sientas <b>TODO</b> 
+    </p>
+    <div class="imagenes">
+      <img src="descarga.jpg" alt="Foto 1">
+      <img src="greycore.jpg" alt="Foto 2">
+      <img src="taekook.jpg" alt="Foto 3">
+    </div>
+
+    
+    <audio controls autoplay loop>
+      <source src="quimica.mp3" type="audio/mp3">
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <button class="boton" onclick="lanzarCorazones()">Aprieta aqui, cosito 💘</button>
+
+    <p class="firma">T amo guapito mio,¿ok?💕</p>
+  </div>
+
+  <script>
+    function lanzarCorazones() {
+      for (let i = 0; i < 10; i++) {
+        let heart = document.createElement("div");
+        heart.className = "heart";
+        heart.style.left = (50 + (Math.random() * 100 - 50)) + "px";
+        heart.style.bottom = "0px";
+        heart.innerHTML = "💗🖇️";
+        document.querySelector(".boton").appendChild(heart);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 30000);
+      }
+    }
+  </script>
+</body>
+</html>
